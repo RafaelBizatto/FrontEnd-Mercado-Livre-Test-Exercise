@@ -6,14 +6,11 @@ body {
 
 .header {
     background-color: #FFD700;
-    padding: 10px;
+    padding: 10px 20px;
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
-}
-
-.time {
-    font-size: 18px;
 }
 
 .search-bar {
@@ -21,11 +18,23 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.location {
-    font-size: 14px;
-    color: #555;
+.carrinho-link {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carrinho_icon {
+    width: 25px;
+    transition: transform 0.2s ease;
+}
+
+.carrinho_icon:hover {
+    transform: scale(1.1);
 }
 
 .banner {
@@ -53,7 +62,7 @@ body {
 }
 
 .meli-plus {
-    background-color: #A52A2A;
+    background-color: #682aa5;
     color: white;
     padding: 10px;
     text-align: center;
@@ -70,12 +79,7 @@ body {
     text-align: center;
 }
 
-.menu-item.new {
-    background-color: #FF4500;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-}
+
 
 .activation {
     background-color: #FFD700;
@@ -95,9 +99,17 @@ body {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    width: 180px;
 }
 
-.footer {
+.product img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer {
     display: flex;
     justify-content: space-around;
     background-color: #FFF;
